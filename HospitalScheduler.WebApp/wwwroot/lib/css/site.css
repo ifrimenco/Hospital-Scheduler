@@ -1,0 +1,275 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+a {
+    color: #0366d6;
+}
+
+header, footer {
+    width: 100%;
+    background-color: #fffcf9;
+    color: #4f4e4f;
+}
+
+#layoutContainer {
+    margin-right: 15px;
+    right: 0%;
+    max-width: 500px;
+    position: relative;
+}
+
+#footerContainer {
+    margin-left: 5% !important;
+}
+
+#logoContainer {
+    margin-left: 5% !important;
+}
+body {
+    background-color: #fcfdff;
+}
+
+.btn-primary {
+    color: #fcfdff;
+    background-color: #7a7479;
+    border-color: #383736;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+/* Form Style */
+
+form {
+    position: relative;
+    max-width: 550px;
+    margin: 5px;
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+
+.appointments-form {
+    width: 900px;
+    height: 500px;
+}
+
+.appointments-form * {
+    z-index: 0;
+}
+
+input, select {
+    height: 35px;
+    width: 350px;
+    background-color: white;
+    border-radius: 0px;
+}
+
+.search-input {
+    width: 350px;
+    z-index: inherit !important;
+}
+
+.search-wrapper {
+    position: fixed !important;
+    z-index: 500 !important;
+}
+
+
+.search-wrapper *{
+    z-index: 500 !important;
+}
+
+
+#userresults option {
+    z-index: 5000 !important;
+}
+
+    .search-input .autocom-box {
+        max-height: 150px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        z-index: 5 !important;
+        background-color: white;
+        position: relative;
+        border: 1px solid black;
+    }
+
+.autocom-box option:hover {
+    background-color: #007dff;
+    color: white;
+}
+
+
+
+#dataWrapper {
+    width: 100%;
+    display: inline-block;
+}
+
+#specWrapper, #roomWrapper {
+    width: 60%;
+}
+
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+textarea {
+    width: 350px;
+    height: 100px;
+    resize: none;
+}
+
+
+#dataWrapper > * {
+    left: 0;
+    margin-left: 0px !important;
+}
+
+#adminData {
+    float: left;
+}
+
+.hospitalBtn {
+    width: 100px;
+    border-radius: 0px !important;
+    height: 35px;
+    margin-right: 5px;
+}
+
+
+.saveBtn {
+    width: 350px;
+    border-radius: 0px !important;
+    height: 35px;
+    margin-right: 5px;
+}
+#editBtn {
+    right: 5%;
+}
+
+#addSpecializationWrapper, #addRoomWrapper {
+    margin-bottom: 10px;
+}
+
+.adminInput {
+    width: 700px;
+}
+
+label {
+    margin-right: 5px;
+    width: 150px;
+}
+
+.input-group-prepend {
+    margin-bottom: 15px;
+    position: relative !important;
+    z-index: 0;
+}
+
+.message {
+    margin-left: 10px;
+    margin-bottom: 0px !important;
+}
+
+.inputs {
+    margin-top: 50px;
+}
+
+.appInput {
+    width: 350px !important;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+select {
+    border: 1px solid black;
+}
+
+
+input, select, option {
+    background-color: #fff;
+}
+
+.form-control {
+    background-color: #fffcf9;
+    border-radius: 0px;
+}
+
+.form-group>.form-control {
+    width: 350px !important;
+    background-color: #fff
+}

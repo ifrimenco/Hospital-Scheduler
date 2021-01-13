@@ -1,0 +1,55 @@
+﻿@model AppointmentVm
+
+@{
+    ViewData["Title"] = "View Appointment";
+}
+
+<div>
+    <div class="container form-control h-50 w-50">
+        <h3  class="display-4">
+            Medic: @Model.Medic
+        </h3>
+        <h3 class="display-4">
+            Date: @Model.AppointmentDate
+        </h3 >
+        <h3 class="display-4">
+            Room: @Model.Room
+        </h3>
+        @if (Model.TypeId == (int)AppointmentTypes.Consultation)
+        {
+            <h3 class="display-4">
+                Type: Consultation
+            </h3>
+        }
+        else
+        {
+            <h3 class="display-4">
+                Type: Intervention
+            </h3>
+        }
+        @if (Model.StatusId == (int)AppointmentStatus.Pending)
+        {
+            <h3 class="display-4">
+                Status: Pending
+            </h3>
+        }
+        else if (Model.StatusId == (int)AppointmentStatus.Confirmed)
+        {
+            <h3 class="display-4">
+                Status: Confirmed
+            </h3>
+        }
+        else
+        {
+            <h3 class="display-4">
+                Status: Finished
+            </h3>
+        }
+        <h3 class="display-4">
+            Duration: @Model.Duration minutes
+        </h3>
+        <h3 class="display-4">
+            Details: @Model.Details
+        </h3>
+    </div>
+</div>

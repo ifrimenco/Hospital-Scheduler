@@ -1,0 +1,72 @@
+﻿@model AppointmentVm
+
+@{
+    ViewData["Title"] = "Edit Appointment";
+}
+
+<div>
+    <div class="container" id="IdContainer" data-id=@Model.Id>
+        <div class="data-wrapper">
+            <h3 class="display-4">
+                Patient: @Model.Patient
+            </h3>
+            <h3 class="display-4">
+                Date: @Model.AppointmentDate
+            </h3>
+            <h3 class="display-4">
+                Room: @Model.Room
+            </h3>
+            @if (Model.TypeId == (int)AppointmentTypes.Consultation)
+            {
+                <h3 class="display-4">
+                    Type: Consultation
+                </h3>
+            }
+            else
+            {
+                <h3 class="display-4">
+                    Type: Intervention
+                </h3>
+            }
+            @if (Model.StatusId == (int)AppointmentStatus.Pending)
+            {
+                <h3 class="display-4">
+                    Status: Pending
+                </h3>
+            }
+            else if (Model.StatusId == (int)AppointmentStatus.Confirmed)
+            {
+                <h3 class="display-4">
+                    Status: Confirmed
+                </h3>
+            }
+            else
+            {
+                <h3 class="display-4">
+                    Status: Finished
+                </h3>
+            }
+            <h3 class="display-4">
+                Duration: @Model.Duration minutes
+            </h3>
+            <h3 class="display-4">
+                Details: @Model.Details
+            </h3>
+            <h3 class="display-4">
+                Conclusions: @Model.Conclusions
+            </h3>
+        </div>
+        <div class="input-wrapper">
+            @if (Model.StatusId == (int)AppointmentStatus.Pending)
+            {
+                <div>
+                    <h4>This appointment has not been yet confirmed</h4>
+                    <button type="button" id="confirmBtn" class="btn btn-primary">Confirm</button>
+                    <button type="button" id="denyBtn" class="btn btn-primary">Deny</button>
+                </div>
+            }
+
+        </div>
+    </div>
+    <script src="~/lib/js/EditAppointment.js"></script>
+</div>

@@ -1,0 +1,17 @@
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\bin\Debug\netcoreapp3.1\HospitalScheduler.DataAccess.deps.json
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\bin\Debug\netcoreapp3.1\HospitalScheduler.DataAccess.dll
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\obj\Debug\netcoreapp3.1\HospitalScheduler.DataAccess.AssemblyInfoInputs.cache
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\obj\Debug\netcoreapp3.1\HospitalScheduler.DataAccess.AssemblyInfo.cs
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\obj\Debug\netcoreapp3.1\HospitalScheduler.DataAccess.csprojAssemblyReference.cache
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\bin\Debug\netcoreapp3.1\HospitalScheduler.Common.dll
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\bin\Debug\netcoreapp3.1\HospitalScheduler.Entities.dll
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\bin\Debug\netcoreapp3.1\HospitalScheduler.DataAccess.runtimeconfig.json
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\bin\Debug\netcoreapp3.1\HospitalScheduler.DataAccess.runtimeconfig.dev.json
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\bin\Debug\netcoreapp3.1\HospitalScheduler.DataAccess.pdb
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\bin\Debug\netcoreapp3.1\HospitalScheduler.Common.pdb
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\bin\Debug\netcoreapp3.1\HospitalScheduler.Entities.pdb
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\obj\Debug\netcoreapp3.1\HospitalScheduler.DataAccess.csproj.CopyComplete
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\obj\Debug\netcoreapp3.1\HospitalScheduler.DataAccess.dll
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\obj\Debug\netcoreapp3.1\HospitalScheduler.DataAccess.pdb
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\obj\Debug\netcoreapp3.1\HospitalScheduler.DataAccess.genruntimeconfig.cache
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.DataAccess\obj\Debug\netcoreapp3.1\HospitalScheduler.DataAccess.csproj.CoreCompileInputs.cache

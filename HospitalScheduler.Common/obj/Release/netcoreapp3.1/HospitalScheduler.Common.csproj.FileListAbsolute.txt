@@ -1,0 +1,9 @@
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Common\bin\Release\netcoreapp3.1\HospitalScheduler.Common.deps.json
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Common\bin\Release\netcoreapp3.1\HospitalScheduler.Common.dll
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Common\bin\Release\netcoreapp3.1\HospitalScheduler.Common.pdb
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Common\obj\Release\netcoreapp3.1\HospitalScheduler.Common.csprojAssemblyReference.cache
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Common\obj\Release\netcoreapp3.1\HospitalScheduler.Common.AssemblyInfoInputs.cache
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Common\obj\Release\netcoreapp3.1\HospitalScheduler.Common.AssemblyInfo.cs
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Common\obj\Release\netcoreapp3.1\HospitalScheduler.Common.csproj.CoreCompileInputs.cache
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Common\obj\Release\netcoreapp3.1\HospitalScheduler.Common.dll
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Common\obj\Release\netcoreapp3.1\HospitalScheduler.Common.pdb

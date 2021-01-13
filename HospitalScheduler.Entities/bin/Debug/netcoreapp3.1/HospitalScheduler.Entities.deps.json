@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "HospitalScheduler.Entities/1.0.0": {
+        "dependencies": {
+          "HospitalScheduler.Common": "1.0.0"
+        },
+        "runtime": {
+          "HospitalScheduler.Entities.dll": {}
+        }
+      },
+      "HospitalScheduler.Common/1.0.0": {
+        "runtime": {
+          "HospitalScheduler.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HospitalScheduler.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HospitalScheduler.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

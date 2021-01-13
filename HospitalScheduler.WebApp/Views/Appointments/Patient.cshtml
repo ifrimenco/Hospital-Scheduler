@@ -1,0 +1,78 @@
+﻿@model AppointmentsAsPatientVm
+
+@{
+    ViewData["Title"] = "My Appointments";
+}
+
+@{
+    <div class="container">
+        <h1 class="display-4"> My appointments</h1>
+        <br />
+        <br />
+        <a href="~/Appointments/Create?isMedic=false" class="btn btn-dark btn-primary">Request Appointment</a>
+        <br />
+        <br />
+        <h2>Appointments</h2>
+        <table class="table">
+            <tr>
+                <th>Medic</th>
+                <th>Date</th>
+                <th>Room</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+            @foreach (var appointment in Model.AppointmentsAsPatient)
+            {
+                <tr>
+                    <td>@($"{appointment.Medic.FirstName} {appointment.Medic.LastName}")</td>
+
+                    <td>
+                        @appointment.AppointmentDate
+                    </td>
+
+                    <td>
+                    @appointment.Room.Name
+                    </td>
+
+                    @if (appointment.TypeId == (int)AppointmentTypes.Consultation)
+                    {
+                        <td>
+                            Consultation
+                        </td>
+                    }
+
+                    else
+                    {
+                        <td>
+                            Intervention
+                        </td>
+                    }
+
+                    @if (appointment.StatusId == (int)AppointmentStatus.Pending)
+                    {
+                        <td>
+                            Pending
+                        </td>
+                    }
+
+                    else if (appointment.StatusId == (int)AppointmentStatus.Confirmed)
+                    {
+                        <td>
+                            Confirmed
+                        </td>
+                    }
+
+                    else
+                    {
+                        <td>
+                            Finished
+                        </td>
+                    }
+                    <td><a href="/Appointments/View/@appointment.Id">View Details</a></td>
+                </tr>
+            }
+        </table>
+
+    </div>
+}

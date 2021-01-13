@@ -1,0 +1,12 @@
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Entities\bin\Debug\netcoreapp3.1\HospitalScheduler.Entities.deps.json
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Entities\bin\Debug\netcoreapp3.1\HospitalScheduler.Entities.dll
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Entities\bin\Debug\netcoreapp3.1\HospitalScheduler.Entities.pdb
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Entities\bin\Debug\netcoreapp3.1\HospitalScheduler.Common.dll
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Entities\bin\Debug\netcoreapp3.1\HospitalScheduler.Common.pdb
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Entities\obj\Debug\netcoreapp3.1\HospitalScheduler.Entities.csprojAssemblyReference.cache
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Entities\obj\Debug\netcoreapp3.1\HospitalScheduler.Entities.AssemblyInfoInputs.cache
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Entities\obj\Debug\netcoreapp3.1\HospitalScheduler.Entities.AssemblyInfo.cs
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Entities\obj\Debug\netcoreapp3.1\HospitalScheduler.Entities.csproj.CoreCompileInputs.cache
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Entities\obj\Debug\netcoreapp3.1\HospitalScheduler.Entities.csproj.CopyComplete
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Entities\obj\Debug\netcoreapp3.1\HospitalScheduler.Entities.dll
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.Entities\obj\Debug\netcoreapp3.1\HospitalScheduler.Entities.pdb

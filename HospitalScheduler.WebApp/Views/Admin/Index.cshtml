@@ -1,0 +1,101 @@
+﻿@model UserListVm
+
+@{
+    ViewData["Title"] = "Admin Home Page";
+}
+
+
+@{
+    if (CurrentUser.IsAdmin)
+    {
+        <div class="container adminContainer">
+            <h1 class="display-4">Admin Page</h1>
+            <br />
+            <br />
+            <div id="dataWrapper" class="form-control shadow-sm h-50 mb-5">
+                <div class="container adminData" id="specWrapper">
+                    <h3>Add Specialization</h3>
+                    <div class="input-group-prepend adminInput" id="addSpecializationWrapper">
+                        <input type="text" id="specializationInput" />
+                        <button class="hospitalBtn btn btn-primary btn-outline-dark" name="addSpecBtn" id="addSpecBtn">Add</button>
+                    </div>
+                    <h3>Delete Specialization</h3>
+                    <div class="input-group-prepend adminInput" id="delSpecializationWrapper">
+                        <select id="delSpec">
+                        </select>
+                        <button class="hospitalBtn btn btn-primary btn-outline-dark" name="delspecBtn" id="delSpecBtn">Delete</button>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="container adminData" id="roomWrapper">
+                    <h3>Add Room</h3>
+                    <div class="input-group-prepend adminInput" id="addRoomWrapper">
+                        <input type="text" id="roomInput" />
+                        <button class="hospitalBtn btn btn-primary btn-outline-dark" name="addRoomBtn" id="addRoomBtn">Add</button>
+                    </div>
+
+                    <h3>Delete Room</h3>
+                    <div class="input-group-prepend adminInput" id="delRoomWrapper">
+                        <select id="delRoom"></select>
+                        <button class="hospitalBtn btn btn-primary btn-outline-dark" name="delRoomBtn" id="delRoomBtn">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <h2> Users</h2>
+            <table class="table">
+                <tr>
+                    <th>User Id</th>
+                    <th>CNP / Passport</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Actions</th>
+                </tr>
+                @foreach (var user in Model.Users)
+                {
+                    <tr>
+                        <td id="userId">@user.Id</td>
+                        <td>@user.CNP</td>
+                        <td>@user.FirstName</td>
+                        <td>@user.LastName</td>
+                        <td class="">
+                            @if (user.UserRoles.Any(ur => ur.RoleId == (int)RoleTypes.Admin))
+                            {
+                                <button class="hospitalBtn btn btn-success btn-outline-dark" name="admin" value=@user.Id type="button">Admin</button>
+                            }
+
+                            else
+                            {
+                                <button class="btn hospitalBtn btn-outline-dark" name="admin" value=@user.Id type="button">Admin</button>
+                            }
+
+                            @if (user.UserRoles.Any(ur => ur.RoleId == (int)RoleTypes.Medic))
+                            {
+                                <button class="btn hospitalBtn btn-success btn-outline-dark" name="medic" value=@user.Id type="button">Medic</button>
+                            }
+                            else
+                            {
+                                <button class="btn hospitalBtn btn-outline-dark" name="medic" value=@user.Id type="button">Medic</button>
+                            }
+                            <a asp-action="Edit" asp-route-id="@user.Id" class=" hospitalBtn btn btn-primary" id="editBtn" name="edit">Edit</a>
+                        </td>
+
+                    </tr>
+                }
+            </table>
+            @if (Model.Page > 1)
+            {
+                int routeId = Model.Page - 1;
+                <a asp-action="Index" asp-route-id="@routeId" class="btn btn-primary hospitalBtn">Previous page</a>
+            }
+
+            @if (Model.HasForward)
+            {
+                int routeId = Model.Page + 1;
+                <a asp-action="Index" asp-route-id="@routeId" class="btn btn-primary hospitalBtn">Next page</a>
+            }
+        </div>
+        <script src="~/lib/js/AdminIndex.js"></script>
+    }
+}

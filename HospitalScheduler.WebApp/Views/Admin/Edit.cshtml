@@ -1,0 +1,39 @@
+﻿@model EditUserVm
+@{
+    ViewData["Title"] = Model.Name;
+}
+@{
+    <div class="container" id="user-container" data-id="@Model.Id">
+        <div class="data" id="isMedic" data-isMedic="@Model.IsMedic">
+            <h2 style="margin-bottom: 10px;" class="display-4">@Model.Name</h2>
+            <p id="CNP-show">@Model.CNP</p>
+            @if (Model.IsMedic)
+            {
+                <p id="spec-show" data-val="@Model.Specialization.Id">@Model.Specialization.Name</p>
+            }
+            <p id="email-show">@Model.Email</p>
+        </div>
+        <div class="inputs">
+            <div id="cnpDiv" class="input-group-prepend">
+                <label for="CNP">Personal Code:</label><input type="text" value="@Model.CNP" id="CNP" />
+            </div>
+            <div id="emailDiv" class="input-group-prepend">
+                <label for="Email">E-mail adress:</label><input type="text" value="@Model.Email" id="Email" />
+            </div>
+            @if (Model.IsMedic)
+            {
+                <div id="specDiv" class="input-group-prepend">
+                    <label>Specialization </label>
+                    <select id="specSelect"></select>
+                </div>
+
+            }
+            <div class="input-group-prepend">
+                <label></label>
+                <button class="saveBtn btn btn-outline-primary" id="submitSpec">Save Changes</button>
+            </div>
+        </div>
+    <a href="/Admin">Back to admin page</a>
+    <script src="~/lib/js/AdminEditUser.js"></script>
+    </div>
+}

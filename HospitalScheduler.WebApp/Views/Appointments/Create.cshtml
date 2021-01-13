@@ -1,0 +1,144 @@
+﻿@model CreateAppointmentVm
+
+@{
+    ViewData["Title"] = Model.IsMedic == true ? "Create Appointment" : "Request Appointment";
+}
+@{
+    <div class="container" id="main-container" data-ismedic="@Model.IsMedic">
+        <br />
+        <br />
+        @if (Model.IsMedic)
+        {
+            <h1 class="display-4">Create Appointment</h1>
+        }
+        else
+        {
+
+            <h1 class="display-4">Request Appointment</h1>
+        }
+        <form asp-action="Create" class="appointments-form" asp-controller="Appointments">
+            @if (Model.IsMedic)
+            {
+                <input type="hidden" asp-for="PatientId" id="inputId" />
+                <input type="hidden" asp-for="MedicId" value=@Model.MedicId />
+            }
+            else
+            {
+                <input type="hidden" asp-for="MedicId" id="inputId" />
+                <input type="hidden" asp-for="RoomId" value=103 />
+                <input type="hidden" asp-for="Duration" value=30 />
+                <input type="hidden" asp-for="PatientId" value=@Model.PatientId />
+            }
+
+            <input type="hidden" asp-for="Status" value=@Model.Status />
+            <input type="hidden" asp-for="IsMedic" value=@Model.IsMedic />
+            <div class="search-wrapper input-group-prepend">
+                @if (Model.IsMedic)
+                {
+                    <label asp-for="PatientId"></label>
+                }
+
+                else
+                {
+                    <label asp-for="MedicId"></label>
+                }
+                <div class="search-input">
+                    <input type="text" autocomplete="off" name="user" id="userInput">
+                    @if (Model.IsMedic)
+                    {
+                        <span asp-validation-for="PatientId" class="text-danger"></span>
+                    }
+                    <span asp-validation-for="MedicId" class="text-danger"></span>
+                    <div id="userresults" class="autocom-box"></div>
+                </div>
+            </div>
+
+            @if (Model.IsMedic)
+            {
+                <div class="input-group-prepend">
+                    <label asp-for="RoomId"></label>
+                    <select asp-for="RoomId" id="roomSelect"></select>
+                    <span asp-validation-for="RoomId" class="text-danger"></span>
+                </div>
+
+                <div class="input-group-prepend">
+                    <label asp-for="Duration"></label>
+                    <input asp-for="Duration" />
+                </div>
+                <span asp-validation-for="Duration" class="text-danger"></span>
+            }
+
+
+            <div class="input-group-prepend">
+                <label asp-for="AppointmentDate"></label>
+                <input asp-for="AppointmentDate" class="" />
+            </div>
+
+            <span asp-validation-for="AppointmentDate" class="text-danger"></span>
+            <div class="input-group-prepend">
+                <label asp-for="Type"></label>
+                <select asp-for="Type" class="appTypeSelect">
+                    <option asp-for="Type" value=0>Consultation</option>
+                    @if (Model.IsMedic)
+                    {
+                        <option asp-for="Type" value=1>Intervention</option>
+                    }
+                </select>
+            </div>
+            <span asp-validation-for="Type" class="text-danger"></span>
+
+            <div class="input-group-prepend">
+                <label asp-for="Details"></label>
+                <textarea asp-for="Details"></textarea>
+            </div>
+            <span asp-validation-for="Details" class="text-danger"></span>
+
+            <div class="input-group-prepend  ">
+                <label></label>
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+        @if (Model.OverlapAppointments.Count() > 0)
+        {
+            <div>
+                <table class="table">
+                    <tr>
+                        <td>
+                            Medic
+                        </td>
+                        <td>
+                            Start Date
+                        </td>
+                        <td>
+                            Duration
+                        </td>
+                        <td>
+                            Message
+                        </td>
+                    </tr>
+                    @foreach (var app in Model.OverlapAppointments)
+                    {
+                        <tr>
+                            <td>
+                                @app.Medic
+                            </td>
+                            <td>
+                                @app.StartDate
+                            </td>
+
+                            <td>
+                                @app.Duration
+                            </td>
+
+                            <td>
+                                @app.Message
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        }
+    </div>
+
+    <script src="~/lib/js/CreateAppointment.js"></script>
+}

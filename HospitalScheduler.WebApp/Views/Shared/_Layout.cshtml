@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--</!-><meta name="" data-change-User-Role="@Url.Action()"/>-->
+
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <title>@ViewData["Title"] - Hospital Scheduler</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/lib/css/site.css" />
+</head>
+<body>
+    <header id="header" class="shadow-sm">
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+            <div class="container" id="logoContainer">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Hospital Scheduler</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container" id="layoutContainer">
+                <div>
+                    @if (CurrentUser.IsAuthenticated)
+                    {
+                        <img style="width: 5%; height: 5%;" src="~/lib/images/stock_pfp.png" />
+                        @CurrentUser.Email
+                        if (CurrentUser.IsAdmin)
+                        {
+                            <a class="m-2" asp-controller="Admin" asp-action="Index">Admin Page</a>
+                        }
+
+                        <a class="m-2" asp-controller="Appointments" asp-action="Index">Appointments</a>
+                        <a class="m-2" asp-controller="UserAccount" asp-action="Logout">Log out</a>
+                    }
+                    else
+                    {
+                        <a class="m-2" asp-controller="UserAccount" asp-action="Login">Log in</a>
+                        <a class="m-2" asp-controller="UserAccount" asp-action="Register">Register</a>
+                    }
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="border-top footer shadow-sm text-muted">
+        <div class="container" id="footerContainer">
+            &copy; 2020 - Hospital Scheduling App
+        </div>
+    </footer>
+    @RenderSection("Scripts", required: false)
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/lib/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\bin\Release\netcoreapp3.1\HospitalScheduler.BusinessLogic.deps.json
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\bin\Release\netcoreapp3.1\HospitalScheduler.BusinessLogic.dll
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\bin\Release\netcoreapp3.1\HospitalScheduler.BusinessLogic.pdb
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\bin\Release\netcoreapp3.1\HospitalScheduler.Common.dll
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\bin\Release\netcoreapp3.1\HospitalScheduler.DataAccess.dll
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\bin\Release\netcoreapp3.1\HospitalScheduler.Entities.dll
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\bin\Release\netcoreapp3.1\HospitalScheduler.DataAccess.pdb
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\bin\Release\netcoreapp3.1\HospitalScheduler.Common.pdb
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\bin\Release\netcoreapp3.1\HospitalScheduler.Entities.pdb
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\obj\Release\netcoreapp3.1\HospitalScheduler.BusinessLogic.csprojAssemblyReference.cache
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\obj\Release\netcoreapp3.1\HospitalScheduler.BusinessLogic.AssemblyInfoInputs.cache
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\obj\Release\netcoreapp3.1\HospitalScheduler.BusinessLogic.AssemblyInfo.cs
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\obj\Release\netcoreapp3.1\HospitalScheduler.BusinessLogic.csproj.CoreCompileInputs.cache
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\obj\Release\netcoreapp3.1\HospitalScheduler.BusinessLogic.csproj.CopyComplete
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\obj\Release\netcoreapp3.1\HospitalScheduler.BusinessLogic.dll
+D:\Users\user\source\repos\HospitalScheduler\HospitalScheduler.BusinessLogic\obj\Release\netcoreapp3.1\HospitalScheduler.BusinessLogic.pdb
